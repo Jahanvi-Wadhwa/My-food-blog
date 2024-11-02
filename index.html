@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jahanvi's Food Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Latest Recipes</h2>
+            <article class="recipe">
+                <img src="momos.jpg" alt="momos">
+                <h3>Manbhavan Momos</h3>
+                <p>This momos recipe is easy to make and incredibly delicious!</p>
+                <a href="#">Check out the recipe</a>
+            </article>
+            <article class="recipe">
+                <img src="chaat.jpg" alt="chaat">
+                <h3>Chatakedaar Chaat</h3>
+                <p>This chaat is perfect for any occasion!</p>
+                <a href="#">check out the recipe</a>
+            </article>
+            <article class="recipe">
+                <img src="samosa.jpg" alt="samosa">
+                <h3>Suhavna Samosa</h3>
+                <p>Try this samosa that is packed with flavors!</p>
+                <a href="#">check out the recipe</a>
+               
+            </article>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm a food enthusiast who loves to cook and share recipes. Join me on my culinary journey!</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                
+                <label for="email">Email: jahanviwadhwa866@gmail.com </label>
+               
+                
+                <label for="email">Instgram: jahanvi_wadhwa </label>
+                
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Food Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffcc00;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.recipe {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recipe img {
+    max-width: 10%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .recipe {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .recipe {
+        padding: 15px;
+    }
+
+    form input, form textarea {
+        font-size: 14px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}
